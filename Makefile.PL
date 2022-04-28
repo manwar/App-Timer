@@ -25,7 +25,7 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'App::Timer' => { file => 'lib/App/Timer.pm', version => '0.01' },
+            'App::Timer' => { file => 'lib/App/Timer.pm', version => '0.02' },
         },
         resources => {
             repository => {

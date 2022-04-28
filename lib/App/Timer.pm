@@ -1,6 +1,6 @@
 package App::Timer;
 
-$App::Timer::VERSION   = '0.01';
+$App::Timer::VERSION   = '0.02';
 $App::Timer::AUTHORITY = 'cpan:MANWAR';
 
 use strict;
@@ -12,7 +12,7 @@ App::Timer - Timer for your application.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 DESCRIPTION
 
@@ -29,7 +29,7 @@ the following lines at the end of the script.
     }
 
 Having done it more than once, I decided to come up with something as
-smooth as possible. This is my attempt in that direction.
+smooth as possible. This is my pure Perl solution.
 
 I found somewhat similar work done in L<Timer::Runtime>. The only issue
 is that it has dependency on a non-core module L<Time::Elapse>.
@@ -40,6 +40,10 @@ To get the timer enable for your command line tool, just add the line
 below at the top of the script and you are good to go.
 
     use App::Timer;
+
+Or if you don't want to pollute your script then you can do this too.
+
+    $ perl -MApp::Timer your-script.pl
 
 =cut
 
